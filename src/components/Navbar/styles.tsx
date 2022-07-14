@@ -21,6 +21,8 @@ export const NavWrapper = styled.header`
 
 export const NavContent = styled.ul`
   width: 100%;
+  margin: 0 auto;
+  max-width: 1800px;
   display: flex;
   justify-content: space-between;
   align-items: center;

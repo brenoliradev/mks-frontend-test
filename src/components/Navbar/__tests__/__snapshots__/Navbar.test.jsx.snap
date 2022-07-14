@@ -29,6 +29,8 @@ exports[`<Navbar /> should render logo correctly 1`] = `
 
 .c1 {
   width: 100%;
+  margin: 0 auto;
+  max-width: 1800px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,6 +52,28 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   width: 90px;
   height: 45px;
   color: #000;
+  padding-left: 15px;
+  padding-right: 27px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .c2 {
@@ -84,8 +108,14 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   font-weight: 300;
   font-size: 20px;
   line-height: 19px;
-  padding-top: 0.4rem;
+  padding-top: 0.8rem;
   color: #ffffff;
+}
+
+@media (max-width:600px) {
+  .c0 {
+    padding: 0 1.2rem;
+  }
 }
 
 <header
@@ -132,6 +162,11 @@ exports[`<Navbar /> should render logo correctly 1`] = `
           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
         />
         <noscript />
+      </span>
+      <span
+        class="c6"
+      >
+        0
       </span>
     </li>
   </ul>

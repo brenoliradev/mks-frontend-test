@@ -10,7 +10,7 @@ import {
   NavWrapper,
 } from './styles'
 
-export const Navbar = () => {
+const Navbar = () => {
   const [shopCart, setShopcart] = useState<number>(0)
 
   return (
@@ -33,3 +33,5 @@ export const Navbar = () => {
     </NavWrapper>
   )
 }
+
+export default Navbar

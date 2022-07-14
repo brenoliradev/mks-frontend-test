@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 
-import { Navbar } from '..'
+import Navbar from '..'
 
 describe('<Navbar />', () => {
   it('should render all the Navbar text', () => {

@@ -1,8 +1,8 @@
-import { ContentWrapper } from './styles'
+import { Container, ContentWrapper } from './styles'
 import { useFetch } from '../../hooks'
 import { useEffect, useMemo } from 'react'
 import { ProductProps } from '../../typings/api'
-import ShopCard from 'components/ShopCard'
+import ShopCard from '../ShopCard'
 
 type ProductReturn = { count: number; products: ProductProps[] }
 
@@ -32,9 +32,11 @@ const Content = () => {
   )
 
   return (
-    <ContentWrapper>
-      {isLoading && myRes ? 'Loading' : mapResult}
-    </ContentWrapper>
+    <Container>
+      <ContentWrapper>
+        {isLoading && myRes ? 'Loading' : mapResult}
+      </ContentWrapper>
+    </Container>
   )
 }
 
