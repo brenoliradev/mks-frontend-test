@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import { CartWrapper, NavContent, NavWrapper } from './styles'
+import {
+  CartWrapper,
+  LogoWrapper,
+  NavContent,
+  NavSubtitle,
+  NavTitle,
+  NavWrapper,
+} from './styles'
 
 export const Navbar = () => {
   const [shopCart, setShopcart] = useState<number>(0)
@@ -8,7 +15,10 @@ export const Navbar = () => {
   return (
     <NavWrapper>
       <NavContent>
-        <li></li>
+        <LogoWrapper>
+          <NavTitle>MKS</NavTitle>
+          <NavSubtitle>Sistemas</NavSubtitle>
+        </LogoWrapper>
         <CartWrapper>
           <Image
             width={19}

@@ -44,12 +44,48 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   list-style-type: none;
 }
 
-.c2 {
+.c5 {
   background: #ffffff;
   border-radius: 8px;
   width: 90px;
   height: 45px;
   color: #000;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.75rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 19px;
+  color: fff;
+}
+
+.c4 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 19px;
+  padding-top: 0.4rem;
+  color: #ffffff;
 }
 
 <header
@@ -58,9 +94,22 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   <ul
     class="c1"
   >
-    <li />
     <li
       class="c2"
+    >
+      <h1
+        class="c3"
+      >
+        MKS
+      </h1>
+      <span
+        class="c4"
+      >
+        Sistemas
+      </span>
+    </li>
+    <li
+      class="c5"
     >
       <span
         style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"

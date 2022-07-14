@@ -30,3 +30,33 @@ export const CartWrapper = styled.li`
   height: 45px;
   color: #000;
 `
+
+export const LogoWrapper = styled.li`
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`
+
+export const NavTitle = styled.h1`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 19px;
+
+  color: fff;
+`
+
+export const NavSubtitle = styled.span`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 19px;
+
+  padding-top: 0.4rem;
+
+  color: #ffffff;
+`
