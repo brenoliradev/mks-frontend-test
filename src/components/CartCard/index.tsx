@@ -5,7 +5,7 @@ import {
   decrementQuantity,
   incrementQuantity,
   StoreProps,
-} from 'store/cartSlice'
+} from '../../store/cartSlice'
 import {
   ContentWrapper,
   DeleteButton,

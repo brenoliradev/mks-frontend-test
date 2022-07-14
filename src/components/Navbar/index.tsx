@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useCallback, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { RootState } from 'store/store'
+import { RootState } from '../../store/store'
 import { ProductProps } from 'typings/api'
 import CartMenu from '../CartMenu'
 import {
