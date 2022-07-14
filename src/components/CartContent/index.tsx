@@ -1,4 +1,4 @@
-import CartCard from 'components/CartCard'
+import CartCard from '../CartCard'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { StoreProps } from 'store/cartSlice'
