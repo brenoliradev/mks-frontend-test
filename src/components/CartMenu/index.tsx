@@ -8,6 +8,7 @@ import {
   TitleWrapper,
   Wrapper,
 } from './styles'
+import CartContent from '../CartContent'
 
 interface Props {
   children?: ReactNode
@@ -34,7 +35,7 @@ const CartMenu = ({ isOpen, close }: Props) => {
           <Overlay onClick={close} />
           <CartWrapper
             style={{
-              width: 'clamp(300px, 30vw, 486px)',
+              width: 'clamp(300px, 90vw, 600px)',
               animation: `${isOpen ? 'fromLeft' : 'toRight'} .5s`,
             }}
           >
@@ -46,6 +47,7 @@ const CartMenu = ({ isOpen, close }: Props) => {
               </CardTitle>
               <CloseButton onClick={close}>X</CloseButton>
             </TitleWrapper>
+            <CartContent />
             <FinishButton>Finalizar Compra</FinishButton>
           </CartWrapper>
         </Wrapper>
