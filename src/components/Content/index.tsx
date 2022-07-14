@@ -2,6 +2,7 @@ import { ContentWrapper } from './styles'
 import { useFetch } from '../../hooks'
 import { useEffect, useMemo } from 'react'
 import { ProductProps } from '../../typings/api'
+import ShopCard from 'components/ShopCard'
 
 type ProductReturn = { count: number; products: ProductProps[] }
 
@@ -16,15 +17,23 @@ const Content = () => {
   const mapResult = useMemo(
     () =>
       myRes &&
-      myRes?.products?.map(({ brand, description, id, name, price }) => (
-        <div key={id}>{name}</div>
+      myRes?.products?.map(({ brand, description, id, name, price, photo }) => (
+        <ShopCard
+          key={id}
+          id={id}
+          brand={brand}
+          description={description}
+          photo={photo}
+          name={name}
+          price={price}
+        />
       )),
     [myRes],
   )
 
   return (
     <ContentWrapper>
-      <h1>{isLoading && myRes ? 'Loading' : mapResult}</h1>
+      {isLoading && myRes ? 'Loading' : mapResult}
     </ContentWrapper>
   )
 }
