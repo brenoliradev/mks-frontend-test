@@ -1,4 +1,4 @@
-/* istanbul ignore file */
+/*   ignore file */
 import Document, {
   DocumentContext,
   Html,

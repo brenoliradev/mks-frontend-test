@@ -1,13 +1,14 @@
-import * as S from './styles'
+import { Navbar } from 'components/Navbar'
+import { Footer } from 'components/Footer'
+import Content from 'components/Content'
+import { Container } from './styles'
 
-const Main = ({
-  title = 'Next.js Boilerplate',
-  description = 'TypeScript, ReactJS, NextJS & Styled Components',
-}) => (
-  <S.Wrapper>
-    <S.Title>{title}</S.Title>
-    <S.Description>{description}</S.Description>
-  </S.Wrapper>
+const Main = () => (
+  <Container>
+    <Navbar />
+    <Content />
+    <Footer />
+  </Container>
 )
 
 export default Main
