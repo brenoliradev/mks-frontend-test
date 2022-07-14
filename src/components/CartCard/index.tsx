@@ -22,9 +22,15 @@ import {
 const CartCard = ({ id, name, photo, price, quantity }: StoreProps) => {
   const dispatch = useDispatch()
 
-  const increment = () => dispatch(incrementQuantity({ id: id.toString() }))
-  const decrement = () => dispatch(decrementQuantity({ id: id.toString() }))
-  const clearProduct = () => dispatch(batchRemove({ ids: [id.toString()] }))
+  const increment = () => {
+    dispatch(incrementQuantity({ id: id.toString() }))
+  }
+  const decrement = () => {
+    dispatch(decrementQuantity({ id: id.toString() }))
+  }
+  const clearProduct = () => {
+    dispatch(batchRemove({ ids: [id.toString()] }))
+  }
 
   return (
     <Wrapper>

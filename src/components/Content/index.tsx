@@ -33,9 +33,11 @@ const Content = () => {
 
   return (
     <Container>
-      <ContentWrapper>
-        {isLoading && myRes ? 'Loading' : mapResult}
-      </ContentWrapper>
+      {isLoading && myRes ? (
+        <></>
+      ) : (
+        <ContentWrapper>{mapResult}</ContentWrapper>
+      )}
     </Container>
   )
 }

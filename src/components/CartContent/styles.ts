@@ -15,3 +15,13 @@ export const Wrapper = styled.main`
     padding: 15px 12px;
   }
 `
+
+export const EmptyMessage = styled.h2`
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+`

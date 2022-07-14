@@ -125,6 +125,7 @@ export const DeleteButton = styled.button`
   justify-content: center;
 
   font-family: 'Montserrat';
+  cursor: pointer;
 
   position: relative;
   bottom: 4.3rem;

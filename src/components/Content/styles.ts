@@ -34,4 +34,6 @@ export const ContentWrapper = styled.div`
     grid-column-gap: 12px;
     grid-row-gap: 16px;
   }
+
+  animation: fadeIn 0.5s;
 `
