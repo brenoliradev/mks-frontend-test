@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from 'store/store'
+import { ProductProps } from 'typings/api'
 import {
   CartNumber,
   CartWrapper,
@@ -11,7 +13,9 @@ import {
 } from './styles'
 
 const Navbar = () => {
-  const [shopCart, setShopcart] = useState<number>(0)
+  const cartItems: ProductProps[] = useSelector(
+    (state: RootState) => state.rootReducer.cart,
+  )
 
   return (
     <NavWrapper>
@@ -27,7 +31,7 @@ const Navbar = () => {
             alt="A Shopcart Icon"
             src="/img/shopcart.svg"
           />
-          <CartNumber>{shopCart}</CartNumber>
+          <CartNumber>{cartItems.length}</CartNumber>
         </CartWrapper>
       </NavContent>
     </NavWrapper>

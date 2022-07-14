@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import Content from '.'
 
@@ -16,6 +16,6 @@ describe('<Content />', () => {
   it('should render the colors correctly', () => {
     const { container } = render(<Content />)
 
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#EEE' })
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#e5e5e5' })
   })
 })

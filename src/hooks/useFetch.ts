@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import axios from 'axios'
 
 interface UseFetchProps {
   url: string
@@ -10,11 +11,10 @@ export const useFetch = <T>({ url, method = 'GET' }: UseFetchProps) => {
   const [isLoading, setIsLoading] = useState<boolean>(true)
 
   const callFetch = () => {
-    fetch(url, { method: method })
-      .then((res) => res.json())
+    axios(url, { method: method })
       .then((res) => {
-        console.log('successfull fetch for ', url, ' -> ', res)
-        setMyRes(res)
+        console.log('successfull fetch for ', url, ' -> ', res.data)
+        setMyRes(res.data)
       })
       .catch((err) => console.log('something happened -> ', err))
       .finally(() => setIsLoading(false))
