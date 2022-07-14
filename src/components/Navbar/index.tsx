@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import {
+  CartNumber,
   CartWrapper,
   LogoWrapper,
   NavContent,
@@ -26,6 +27,7 @@ export const Navbar = () => {
             alt="A Shopcart Icon"
             src="/img/shopcart.svg"
           />
+          <CartNumber>{shopCart}</CartNumber>
         </CartWrapper>
       </NavContent>
     </NavWrapper>

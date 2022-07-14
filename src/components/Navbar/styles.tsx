@@ -13,6 +13,10 @@ export const NavWrapper = styled.header`
   grid-area: navbar;
   padding-right: 88px;
   padding-left: 65px;
+
+  @media (max-width: 600px) {
+    padding: 0 1.2rem;
+  }
 `
 
 export const NavContent = styled.ul`
@@ -29,6 +33,21 @@ export const CartWrapper = styled.li`
   width: 90px;
   height: 45px;
   color: #000;
+
+  padding-left: 15px;
+  padding-right: 27px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const CartNumber = styled.span`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 `
 
 export const LogoWrapper = styled.li`
@@ -56,7 +75,7 @@ export const NavSubtitle = styled.span`
   font-size: 20px;
   line-height: 19px;
 
-  padding-top: 0.4rem;
+  padding-top: 0.8rem;
 
   color: #ffffff;
 `
