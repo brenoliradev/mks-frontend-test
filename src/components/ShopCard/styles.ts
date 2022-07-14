@@ -17,7 +17,7 @@ export const Wrapper = styled.main`
 
   @media (max-width: 400px) {
     padding-top: 4px;
-    min-height: 300px;
+    min-height: 325px;
   }
 `
 
@@ -80,6 +80,7 @@ export const Description = styled.p`
   line-height: 12px;
 
   padding: 0 12px;
+  margin-top: 2px;
   margin-bottom: 4px;
 
   color: #2c2c2c;

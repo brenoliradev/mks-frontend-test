@@ -25,6 +25,10 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   grid-area: navbar;
   padding-right: 88px;
   padding-left: 65px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .c1 {
@@ -52,6 +56,7 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   width: 90px;
   height: 45px;
   color: #000;
+  cursor: pointer;
   padding-left: 15px;
   padding-right: 27px;
   display: -webkit-box;
@@ -66,6 +71,12 @@ exports[`<Navbar /> should render logo correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.c5:hover {
+  opacity: 0.9;
 }
 
 .c6 {
@@ -104,7 +115,6 @@ exports[`<Navbar /> should render logo correctly 1`] = `
 
 .c4 {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 19px;

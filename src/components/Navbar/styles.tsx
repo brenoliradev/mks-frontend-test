@@ -14,6 +14,10 @@ export const NavWrapper = styled.header`
   padding-right: 88px;
   padding-left: 65px;
 
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
   @media (max-width: 600px) {
     padding: 0 1.2rem;
   }
@@ -36,12 +40,20 @@ export const CartWrapper = styled.li`
   height: 45px;
   color: #000;
 
+  cursor: pointer;
+
   padding-left: 15px;
   padding-right: 27px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  transition: all 200ms;
+
+  :hover {
+    opacity: 0.9;
+  }
 `
 
 export const CartNumber = styled.span`
@@ -72,7 +84,6 @@ export const NavTitle = styled.h1`
 
 export const NavSubtitle = styled.span`
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 19px;

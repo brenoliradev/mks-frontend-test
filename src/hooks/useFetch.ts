@@ -13,10 +13,10 @@ export const useFetch = <T>({ url, method = 'GET' }: UseFetchProps) => {
   const callFetch = () => {
     axios(url, { method: method })
       .then((res) => {
-        console.log('successfull fetch for ', url, ' -> ', res.data)
+        // console.log('successfull fetch for ', url, ' -> ', res.data)
         setMyRes(res.data)
       })
-      .catch((err) => console.log('something happened -> ', err))
+      .catch((err) => console.error('something happened -> ', err))
       .finally(() => setIsLoading(false))
   }
 

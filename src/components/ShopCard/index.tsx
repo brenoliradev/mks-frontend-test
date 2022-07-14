@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useDispatch } from 'react-redux'
-import { addToCart, StoreProps } from 'store/cartSlice'
+import { addToCart, StoreProps } from '../../store/cartSlice'
 import { ProductProps } from 'typings/api'
 import {
   Button,
