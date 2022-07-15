@@ -38,6 +38,8 @@ exports[`<Content /> should render container correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 3rem 0;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }
 
 @media (max-width:1024px) {
