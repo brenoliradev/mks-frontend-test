@@ -13,8 +13,9 @@ API: [API REST de produtos](https://mks-frontend-challenge-api.herokuapp.com/api
 2. React & Hooks
 3. Next.js
 4. Redux & Redux Toolkit
-5. Styled-components
-6. Jest
+5. Custom Hook -> useFetch 
+6. Styled-components
+7. Jest
 
 ---------------
 
