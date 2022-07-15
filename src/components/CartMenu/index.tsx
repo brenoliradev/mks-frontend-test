@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from 'react'
+import { ReactNode, useEffect, useMemo, useState } from 'react'
 import {
   CardTitle,
   CartWrapper,
@@ -6,9 +6,14 @@ import {
   FinishButton,
   Overlay,
   TitleWrapper,
+  TotalContainer,
+  TotalTag,
   Wrapper,
 } from './styles'
 import CartContent from '../CartContent'
+import { useSelector } from 'react-redux'
+import { RootState } from 'store/store'
+import { StoreProps } from 'store/cartSlice'
 
 interface Props {
   children?: ReactNode
@@ -18,6 +23,19 @@ interface Props {
 
 const CartMenu = ({ isOpen, close }: Props) => {
   const [shouldRender, setRender] = useState(isOpen)
+  const cartItems: StoreProps[] = useSelector(
+    (state: RootState) => state.rootReducer.cart,
+  )
+
+  const totalPrice = useMemo(
+    () =>
+      cartItems.length > 0 &&
+      cartItems.reduce(
+        (a, b) => a + +b.price.toString().split('.00')[0] * b.quantity,
+        0,
+      ),
+    [cartItems],
+  )
 
   useEffect(() => {
     if (isOpen) setRender(true)
@@ -48,6 +66,10 @@ const CartMenu = ({ isOpen, close }: Props) => {
               <CloseButton onClick={close}>X</CloseButton>
             </TitleWrapper>
             <CartContent />
+            <TotalContainer>
+              <TotalTag>Total:</TotalTag>
+              <TotalTag>${totalPrice}</TotalTag>
+            </TotalContainer>
             <FinishButton>Finalizar Compra</FinishButton>
           </CartWrapper>
         </Wrapper>

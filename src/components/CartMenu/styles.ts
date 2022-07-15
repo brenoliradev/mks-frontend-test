@@ -98,3 +98,20 @@ export const FinishButton = styled.button`
     transition: background 0s;
   }
 `
+
+export const TotalContainer = styled.div`
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 12px 63px 42px 47px;
+`
+
+export const TotalTag = styled.p`
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 15px;
+
+  color: #ffffff;
+`
