@@ -11,7 +11,7 @@ export const Wrapper = styled.main`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.2rem 0 0.8rem;
+  padding: 0 0.6rem 0 0.8rem;
 `
 
 export const ContentWrapper = styled.div`
@@ -27,7 +27,7 @@ export const ProductName = styled.p`
   font-size: 14px;
   line-height: 20px;
   text-align: left;
-  width: 33%;
+  width: 30%;
   margin: 0 8px;
 
   color: #2c2c2c;
@@ -103,7 +103,9 @@ export const PriceTag = styled.p`
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  margin-left: 12px;
+  margin-left: 6px;
+
+  width: 95px;
 
   color: #000000;
 

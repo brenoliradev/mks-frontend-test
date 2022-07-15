@@ -45,7 +45,7 @@ const CartCard = ({ id, name, photo, price, quantity }: StoreProps) => {
             <SymbolWrapper onClick={increment}>+</SymbolWrapper>
           </QuantityWrapper>
         </QuantityContainer>
-        <PriceTag>R${price.toString().split('.00')[0]}</PriceTag>
+        <PriceTag>R${+price.toString().split('.00')[0] * quantity}</PriceTag>
       </ContentWrapper>
       <DeleteButton onClick={clearProduct}>X</DeleteButton>
     </Wrapper>
