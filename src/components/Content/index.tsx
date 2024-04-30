@@ -8,7 +8,7 @@ type ProductReturn = { count: number; products: ProductProps[] }
 
 const Content = () => {
   const { callFetch, isLoading, myRes } = useFetch<ProductReturn>({
-    url: 'https://mks-frontend-challenge-api.herokuapp.com/api/v1/products?page=1&rows=10&sortBy=id&orderBy=DESC',
+    url: 'https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api/v1/products?page=1&rows=10&sortBy=id&orderBy=DESC',
   })
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
